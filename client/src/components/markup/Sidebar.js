@@ -9,7 +9,7 @@ const Sidebar = () => (
       <div className="sidebar-brand-icon">
         <img src="./client/img/icon.png" />
       </div>
-      <div className="sidebar-brand-text mx-3">Gram Up Yourself!</div>
+      <div className="sidebar-brand-text mx-3">Insta Follow</div>
     </Link>
 
     {/* <!-- Divider  --> */}
@@ -135,47 +135,11 @@ const Sidebar = () => (
 
     {/* <!-- Nav Item -   --> */}
     <li className="nav-item">
-      <Link className="nav-link" to="/support-us">
-        <i className="fas fa-fw fa-grin-hearts"></i>
-        <span>Support us</span>
-      </Link>
-    </li>
-
-    {/* <!-- Nav Item -   --> */}
-    <li className="nav-item">
-      <Link className="nav-link" href="https://chrome.google.com/webstore/detail/gram-up/njonkbhnmmjgancfbncekpgkmidhbbpo" target="_blank">
+      <Link className="nav-link" href="" target="_blank">
         <i className="fab fa-fw fa-chrome"></i>
         <span>Rate extension</span>
       </Link>
     </li>
-
-    {/* <!-- Nav Item -   --> */}
-    <li className="nav-item">
-      <a className="nav-link" href="https://t.me/instabotproject" target="_blank">
-        <i className="fab fa-fw fa-telegram"></i>
-        <span>Telegram</span></a>
-    </li>
-
-    {/* <!-- Nav Item -   --> */}
-    <li className="nav-item">
-      <a className="nav-link" href="https://github.com/instagrambot/web" target="_blank">
-        <i className="fab fa-fw fa-github"></i>
-        <span>GitHub</span></a>
-    </li>
-
-    {/* <!-- Nav Item -   --> */}
-    <li className="nav-item">
-      <a className="nav-link" href="https://paypal.me/okhlopkov/300" target="_blank">
-        <i className="fas fa-fw fa-donate"></i>
-        <span>Donate</span></a>
-    </li>
-
-    {/* <!-- Nav Item -   --> */}
-    {/* <li className="nav-item">
-      <a className="nav-link" href="https://github.com/instagrambot/web#installing-extension" target="_blank">
-        <i className="fas fa-fw fa-question"></i>
-        <span>FAQ</span></a>
-    </li> */}
 
     {/* <!-- Divider  --> */}
     <hr className="sidebar-divider d-none d-md-block" />

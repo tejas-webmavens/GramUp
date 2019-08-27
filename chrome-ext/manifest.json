@@ -32,7 +32,8 @@
     "https://insta.gramup.me/*",
     "https://api.gramup.me/*",
     "https://gramup.me/*",
-    "https://instagrambot.github.io/*"
+    "https://instagrambot.github.io/*",
+    "*://localhost/*"
   ],
   "externally_connectable": {
     "matches": [
@@ -40,7 +41,8 @@
       "https://insta.gramup.me/*",
       "https://api.gramup.me/*",
       "https://gramup.me/*",
-      "https://instagrambot.github.io/*"
+      "https://instagrambot.github.io/*",
+      "*://localhost/*"
     ]
   },
   "manifest_version": 2

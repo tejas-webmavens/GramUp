@@ -18,7 +18,7 @@ const scripts = {
     description: 'Will post the same comment: 🔥 @{username}!',
     params: [
       { name: 'hashtag', type: 'text', prefix: '#', defaultValue: 'cats' },
-      { name: 'nPhotos', type: 'number', values: [1,2,5,10,20,50] },
+      { name: 'nPhotos', type: 'number', values: [1,2,5,10,20,50,Infinity] },
     ],
     run: async ({ hashtag, nPhotos }, printLog = console.log) => {
       if (!hashtag) {
@@ -481,7 +481,7 @@ const scripts = {
     name: 'Follow people who posts by hashtag',
     params: [
       { name: 'hashtag', type: 'text', prefix: '#', labelText: 'Hashtag', defaultValue: 'cats' },
-      { name: 'nUsers', type: 'number', labelText: 'Number of users', values: [1,5,10,20,50] },
+      { name: 'nUsers', type: 'number', labelText: 'Number of users', values: [1,5,10,20,50,Infinity] },
     ],
     run: async ({ hashtag, nUsers }, printLog = console.log) => {
       if (!hashtag) {
@@ -505,7 +505,7 @@ const scripts = {
   like_location: {
     params: [
       { name: 'location_name', type: 'text', labelText: 'Location name' },
-      { name: 'nPhotos', type: 'number', labelText: 'Number of photos', values: [1,2,5,10,20,50] },
+      { name: 'nPhotos', type: 'number', labelText: 'Number of photos', values: [1,2,5,10,20,50,Infinity] },
     ],
     run: async ({ location_name, nPhotos }, printLog = console.log) => {
       const { items: locations } = await instagram.request({ method: 'search_location', params: [location_name] })
